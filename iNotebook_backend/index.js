@@ -1,6 +1,6 @@
 // const mongoose = require('mongoose');
 import express, { json } from 'express';
-import connectToMongo from './db';
+import connectToMongo from './db.js';
 import cors from 'cors';
 
 connectToMongo();
