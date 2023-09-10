@@ -1,0 +1,28 @@
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon {
+  color: rgb(99, 4, 4);
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+  color: #221f1f;
+}
+
+.navbar-scroll {
+  background-color: rgba(198, 212, 115, 0.274);
+  box-shadow: 0 10px 50px 0 #c5aa6a;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: rgb(201, 194, 194);
+  color: #5e0808;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
