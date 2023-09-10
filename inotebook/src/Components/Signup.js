@@ -7,7 +7,7 @@ export default function Signup(props) {
 
   const handleClick = async (e) => {
     e.preventDefault();
-    const url = "http://localhost:8080/api/auth/createuser"
+    const url = "https://notebook-1r4s.onrender.com/api/auth/createuser"
     // const {name,email,password} = credential
     const response = await fetch(url, {
       
