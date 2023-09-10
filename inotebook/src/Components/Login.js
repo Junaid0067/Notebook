@@ -6,7 +6,7 @@ export default function Login(props) {
     const[credential,setCredential]= useState({email:"",password:""})
     const handleClick = async (e) =>{
         e.preventDefault();
-        const url = "http://localhost:8080/api/auth/login"
+        const url = "https://notebook-1r4s.onrender.com/api/auth/login"
         const response = await fetch(url, {
             method: 'POST',
             headers: {
