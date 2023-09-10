@@ -1,7 +1,7 @@
 // const mongoose = require('mongoose');
 const express = require('express');
-const connectToMongo = require('./db')
-import cors from 'cors';
+const connectToMongo = require('./db');
+var cors = require('cors');
 
 connectToMongo();
 const app = express()
