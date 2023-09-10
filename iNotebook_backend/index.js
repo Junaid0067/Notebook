@@ -1,13 +1,13 @@
 // const mongoose = require('mongoose');
-const express = require('express');
-const connectToMongo = require('./db')
-var cors = require('cors')
+import express, { json } from 'express';
+import connectToMongo from './db';
+import cors from 'cors';
 
 connectToMongo();
 const app = express()
 app.use(cors())
 const port = 8080
-app.use(express.json())
+app.use(json())
 //Available routes
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/notes',require('./routes/notes'))
